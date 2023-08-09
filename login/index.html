@@ -8,13 +8,14 @@
 </head>
 <body>
     <form method="post" action="form.php" autocomplete="off" autocapitalize="off">
-        <h1>Registro</h1>
+        <h1>Login</h1>
         <input type="text" name="nome_completo" placeholder="Nome Completo" required>
         <input type="email" name="email" placeholder="E-Mail" required>
         <input type="password" name="senha" placeholder="Senha" required>
         <input type="number" name="cpf" placeholder="CPF" maxlength="11" required>
-        <input type="hidden" name="registro" value="1">
-        <input type="submit" value="Registrar" style="background-color: #612F74;color: white;">
+        <input type="hidden" name="login" value="1">
+        <input type="submit" value="Entrar" style="background-color: #612F74;color: white;">
+        <p style="font-size: 14px;">Não tem conta? <a href="../registro/">Faça seu registro</a></p>
     </form>
 </body>
 </html>
