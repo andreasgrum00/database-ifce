@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+/* font-family: 'DM Sans', sans-serif; */
+
+:root {
+    --main-color: #612F74;
+    --header-color: #572969;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 100vh;
+    width: 100vw;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 25vw;
+    border-radius: 20px;
+    padding: 15px;
+    animation-name: fadeInMain;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+}
+
+form > * {
+    margin: 10px;
+}
+
+form > input {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    outline: none;
+    width: 80%;
+}
+
+form > #google-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    width: 80%;
+    height: 40px;
+}
+
+form > #facebook-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #1977F3;
+    color: white;
+    width: 80%;
+    height: 40px;
+}
+
+a {
+    color: black;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    display: none;
+}
+
+@keyframes fadeInMain {
+    0% {
+        transform: translate(0, 15%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
