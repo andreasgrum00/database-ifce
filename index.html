@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nubank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <script>
+        function formatar(mascara, documento){
+            var i = documento.value.length;
+            var saida = mascara.substring(i)
+            if (texto.substring(0,1) != saida) {
+                documento.value += texto.substring(0,1);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="icon">
+            <img src="imgs/logo.png" width="35px" style="margin: 25px;" draggable="false">
+        </div>
+        <nav style="width: 83%;">
+            <a href="/" class="nav-header"><strong>Página Inicial</strong></a>
+            <hr class="hr-header">
+            <a href="/" class="nav-header"><strong>Para você</strong></a>
+            <hr class="hr-header">
+            <a href="/" class="nav-header"><strong>Para seu negócio</strong></a>
+            <hr class="hr-header">
+            <a href="/" class="nav-header"><strong>O Nubank</strong></a>
+            <hr class="hr-header">
+            <a href="/" class="nav-header"><strong>Perguntas</strong></a>
+        </nav>
+        <div id="login-but" style="display: flex; align-items: center;height: 100%;">
+            <a href="/login/" style="margin-right: 5px;">Login</a>
+            <span class="material-symbols-outlined" style="color: white;">
+                login
+            </span>
+        </div>
+    </header>
+    <main style="display: flex;align-items: center;flex-direction: row;height: 100vh;width: 100vw;color: white;">
+        <figure>
+            <img src="./imgs/cards.png" width="400px" draggable="false">
+        </figure>
+        <div id="main-text" style="display: flex;flex-direction: column;">
+            <h1 style="font-size: 30px;width: 250px; margin-bottom: 10px;">Tenha N Possibilidades de produtos para N Possibilidades na vida</h1>
+            <p style="font-size: 20px;width: 300px;">O que você precisa pra ficar no controle da sua vida financeira tem no app do Nubank.</p>
+        </div>
+        <form>
+            <h1 style="width: 200px;font-size: 18px;">Peça sua conta e cartão de crédito do Nubank</h1>
+            <div id="input-cpf">
+                <input type="text" maxlength="11" onkeypress="formatar('###-###-###-##'), this" placeholder="Digite seu CPF">
+                <hr>
+            </div>
+            <div id="submit-cpf">
+                <input type="submit" value="Continuar">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
